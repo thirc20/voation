@@ -1,12 +1,18 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Res } from '@nestjs/common';
 import { AppService } from './app.service';
+import { Response } from 'express';
+import path from 'path';
 
 @Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get()
-  getHello(): string {
-    return this.appService.getHello();
+  
+  getHrootello(@Res() res: Response){
+    // console.log(__dirname)
+    // let caminho = __dirname.replace('dist', '')
+    // console.log(caminho);
+    return this.appService.getHello()
   }
 }

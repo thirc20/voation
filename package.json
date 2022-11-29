@@ -22,22 +22,25 @@
     "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
+    "@nestjs/cli": "^9.1.5",
     "@nestjs/common": "^9.0.0",
     "@nestjs/core": "^9.0.0",
     "@nestjs/platform-express": "^9.0.0",
-    "@nestjs/typeorm": "^9.0.1",
-    "@nestjs/cli": "^9.1.5",
     "@nestjs/schematics": "^9.0.0",
+    "@nestjs/serve-static": "^3.0.0",
     "@nestjs/testing": "^9.0.0",
+    "@nestjs/typeorm": "^9.0.1",
     "axios": "^1.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
     "form-data": "^4.0.0",
     "mysql2": "^2.3.3",
     "node-fetch": "^2.6.7",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.2",
     "rxjs": "^7.2.0",
-    "typeorm": "^0.3.10",
-    "ts-node": "^10.0.0"
+    "ts-node": "^10.0.0",
+    "typeorm": "^0.3.10"
   },
   "devDependencies": {
     "@nestjs/cli": "^9.1.5",
