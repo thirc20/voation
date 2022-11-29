@@ -10,11 +10,11 @@ import { VotoModule } from './voto/voto.module';
   imports: [
     TypeOrmModule.forRoot({
       type: 'mysql',
-      host: 'localhost',
+      host: 'us-cdbr-east-06.cleardb.net',
       port: 3306,
-      username: 'root',
-      password: 'password',
-      database: 'votation',
+      username: 'b17fdffeac6708',
+      password: '6bac8b1a',
+      database: 'heroku_6bb8b39f8bbe2fe',
       entities: [VotoEntity],
       synchronize: true,
     }),
