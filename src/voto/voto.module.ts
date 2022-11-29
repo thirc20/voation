@@ -10,6 +10,7 @@ import { VotoModel } from "./model/voto.model";
     imports: [TypeOrmModule.forFeature([VotoEntity])],
     controllers: [VotoController],
     providers: [VotoService, VotoModel],
+    exports: [VotoService]
 })
 
 export class VotoModule{}
